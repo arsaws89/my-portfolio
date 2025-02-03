@@ -1,0 +1,42 @@
+.animated-gradient-text {
+  position: relative;
+  display: inline-block;
+  padding: 2px;
+}
+
+.gradient-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background-size: 200% auto;
+  animation: shine linear infinite;
+  -webkit-animation: shine linear infinite;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+}
+
+.text-content {
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine linear infinite;
+  -webkit-animation: shine linear infinite;
+  padding: 0.5rem 1rem;
+  border-radius: inherit;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@-webkit-keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+} 

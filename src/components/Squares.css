@@ -1,0 +1,19 @@
+.squares-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  background-color: #FFFFFF;
+  pointer-events: auto; /* Enable hover effects */
+}
+
+.square {
+  pointer-events: auto;
+  transition: transform 0.3s ease;
+}
+
+.square:hover {
+  transform: scale(1.1);
+}

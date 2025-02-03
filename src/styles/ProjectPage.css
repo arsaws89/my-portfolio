@@ -1,0 +1,155 @@
+.project-page {
+  padding: 2rem;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.project-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-nav .back-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #000;
+  font-family: "KH Teka TRIAL";
+  transition: transform 0.3s ease;
+}
+
+.project-nav .back-button:hover {
+  transform: translateX(-5px);
+}
+
+.project-nav h1 {
+  font-family: "KH Teka TRIAL";
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.project-hero {
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+
+.project-intro {
+  margin-bottom: 2rem;
+  padding-top: 0;
+}
+
+.project-intro h1 {
+  font-family: "KH Teka TRIAL";
+  font-size: 3.25rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.project-intro h2 {
+  font-family: "KH Teka TRIAL";
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font-size: 1.08rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-top: 1.5rem;
+}
+
+.project-description strong {
+  font-weight: 600;
+  color: #000;
+}
+
+.project-description + .project-description {
+  margin-top: 1rem;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 4rem;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 2rem 0;
+}
+
+.project-section {
+  max-width: 800px;
+}
+
+.project-section h3 {
+  font-family: "KH Teka TRIAL";
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.project-navigation {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.next-project {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #000;
+  font-family: "KH Teka TRIAL";
+  transition: transform 0.3s ease;
+}
+
+.next-project:hover {
+  transform: translateX(5px);
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.project-images-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 0;
+}
+
+.project-images-stack img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.project-images-stack img:nth-child(2) {
+  background-color: white; /* Or #FFFFFF */
+  padding: 0;
+  border-radius: 0;
+}
+
+@media (max-width: 768px) {
+  .project-images {
+    grid-template-columns: 1fr;
+  }
+} 
