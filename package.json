@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^10.16.4",
@@ -30,5 +32,6 @@
     "postcss": "^8.5.1",
     "tailwindcss": "^4.0.0",
     "vite": "^6.0.5"
-  }
+  },
+  "homepage": "https://yourusername.github.io/sawsanportfolio"
 }

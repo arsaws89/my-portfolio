@@ -45,8 +45,8 @@ const SkiplinoProject = () => {
       </div>
 
       <div className="project-navigation">
-        <button onClick={() => navigate('/projects/saboon')} className="next-project">
-          Next Project: Saboon →
+        <button onClick={() => navigate('/projects/walaa')} className="next-project">
+          Next Project: Walaa →
         </button>
       </div>
     </div>

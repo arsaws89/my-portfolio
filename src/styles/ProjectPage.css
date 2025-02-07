@@ -1,5 +1,5 @@
 .project-page {
-  padding: 2rem;
+  padding: 2rem 1rem;
   max-width: 1700px;
   margin: 0 auto;
 }
@@ -43,20 +43,20 @@
 
 .project-intro h1 {
   font-family: "KH Teka TRIAL";
-  font-size: 3.25rem;
+  font-size: clamp(2rem, 5vw, 3.25rem);
   font-weight: 300;
   margin-bottom: 1rem;
 }
 
 .project-intro h2 {
   font-family: "KH Teka TRIAL";
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
   font-weight: 300;
   margin-bottom: 1rem;
 }
 
 .project-description {
-  font-size: 1.08rem;
+  font-size: clamp(1rem, 2vw, 1.08rem);
   line-height: 1.6;
   max-width: 800px;
   margin-top: 1.5rem;
@@ -139,6 +139,9 @@
 .project-images-stack img {
   width: 100%;
   height: auto;
+  border-width: 1px;
+  border-color: #000;
+  border-style: solid;
   border-radius: 12px;
 }
 
@@ -148,8 +151,65 @@
   border-radius: 0;
 }
 
+@media (max-width: 1024px) {
+  .project-page {
+    padding: 1.5rem;
+  }
+
+  .project-hero {
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+  }
+
+  .project-content {
+    gap: 2rem;
+  }
+
+  .project-images-stack {
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .project-page {
+    padding: 1rem;
+  }
+
+  .project-nav {
+    margin-bottom: 1.5rem;
+  }
+
+  .project-hero {
+    margin-bottom: 1.5rem;
+  }
+
+  .project-content {
+    gap: 1.5rem;
+  }
+
+  .project-images-stack {
+    gap: 1.5rem;
+  }
+
   .project-images {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-nav .back-button {
+    font-size: 1rem;
+  }
+
+  .project-description + .project-description {
+    margin-top: 0.8rem;
+  }
+
+  .project-navigation {
+    margin-top: 2rem;
+  }
+
+  .next-project {
+    font-size: 1rem;
   }
 } 

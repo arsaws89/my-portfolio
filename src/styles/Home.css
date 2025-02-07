@@ -621,3 +621,92 @@ body {
 .nav-link-button:hover::after {
   width: 100%;
 }
+
+/* Add/update responsive styles */
+
+@media (max-width: 1024px) {
+  .hero-text-large {
+    font-size: 60px;
+    line-height: 70px;
+    padding: 0 1rem;
+  }
+
+  .work-grid {
+    gap: 30px;
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 1.5rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    position: relative;
+    left: 0;
+    transform: none;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-text-large {
+    font-size: 40px;
+    line-height: 50px;
+    padding: 0 1rem;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 1rem;
+  }
+
+  .yellow-strip {
+    height: 80px;
+  }
+
+  .strip-content {
+    font-size: 20px;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-button {
+    font-size: 20px;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text-large {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .work-section {
+    padding: 80px 0;
+  }
+
+  .yellow-strip {
+    height: 60px;
+  }
+
+  .strip-content {
+    font-size: 16px;
+  }
+
+  .footer {
+    padding: 60px 0;
+  }
+
+  .social-button {
+    font-size: 16px;
+    padding: 6px 16px;
+  }
+}

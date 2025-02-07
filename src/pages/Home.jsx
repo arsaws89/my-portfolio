@@ -10,7 +10,7 @@ import credabilityImage from '../assets/credability.jpg'
 import talmenaImage from '../assets/talmena.png'
 import skiplinoImage from '../assets/skiplino.jpg'
 import founderiseImage from '../assets/founderise.jpg'
-import saboonImage from '../assets/saboon.png'
+import walaaImage from '../assets/walaa.png'
 
 const Home = () => {
   const [textAnimationComplete, setTextAnimationComplete] = useState(false)
@@ -167,15 +167,15 @@ const Home = () => {
               <p>UI/UX • Web Platform • Brand Identity</p>
             </div>
           </div>
-          <div className="work-card" onClick={() => navigate('/projects/saboon')}>
+          <div className="work-card" onClick={() => navigate('/projects/walaa')}>
             <img 
-              src={saboonImage}
-              alt="Saboon Project" 
+              src={walaaImage}
+              alt="Walaa Project" 
               className="work-card-image"
             />
             <div className="work-content">
-              <h3>Saboon</h3>
-              <p>UI/UX • E-commerce • Brand Identity</p>
+              <h3>Walaa</h3>
+              <p>UI/UX • Web App • Brand Identity</p>
             </div>
           </div>
         </div>

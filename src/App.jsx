@@ -6,8 +6,9 @@ import CredabilityProject from './pages/projects/Credability'
 import CobiProject from './pages/projects/Cobi'
 import TalmenaProject from './pages/projects/Talmena'
 import SkiplinoProject from './pages/projects/Skiplino'
-import SaboonProject from './pages/projects/Saboon'
 import FounderiseProject from './pages/projects/Founderise'
+import WalaaProject from './pages/projects/Walaa'
+import Contact from './pages/Contact'
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
       <Route path="/projects/cobi" element={<CobiProject />} />
       <Route path="/projects/talmena" element={<TalmenaProject />} />
       <Route path="/projects/skiplino" element={<SkiplinoProject />} />
-      <Route path="/projects/saboon" element={<SaboonProject />} />
       <Route path="/projects/founderise" element={<FounderiseProject />} />
+      <Route path="/projects/walaa" element={<WalaaProject />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   )
 }
