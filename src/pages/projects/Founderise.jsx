@@ -1,5 +1,8 @@
 import { useNavigate } from 'react-router-dom'
 import '../../styles/ProjectPage.css'
+import FR1 from '../../assets/FR1.jpg'
+import FR2 from '../../assets/FR2.jpg'
+import FR3 from '../../assets/FR3.jpg'
 
 const FounderiseProject = () => {
   const navigate = useNavigate()
@@ -10,38 +13,42 @@ const FounderiseProject = () => {
         <button onClick={() => navigate('/')} className="back-button">
           ← Back
         </button>
-        <h1>Founderise</h1>
       </nav>
 
       <div className="project-hero">
         <div className="project-intro">
+          <h1>Founderise</h1>
           <h2>UI/UX • Web App • Brand Identity</h2>
-          <p className="project-description">
-            Project description here...
-          </p>
         </div>
-        <img 
-          src="/path/to/hero-image.jpg" 
-          alt="Founderise Project Hero" 
-          className="hero-image"
-        />
       </div>
 
       <div className="project-content">
-        <section className="project-section">
-          <h3>The Challenge</h3>
-          <p>Project details here...</p>
-        </section>
-
-        <section className="project-section">
-          <h3>The Solution</h3>
-          <p>Solution details here...</p>
-        </section>
-
-        <section className="project-section">
-          <h3>The Result</h3>
-          <p>Results and outcomes...</p>
-        </section>
+        <div className="project-images-stack">
+          <img 
+            src={FR1} 
+            alt="Founderise Interface 1" 
+            onError={(e) => {
+              console.error('Failed to load image:', e.target.src);
+              e.target.style.display = 'none';
+            }}
+          />
+          <img 
+            src={FR2} 
+            alt="Founderise Interface 2" 
+            onError={(e) => {
+              console.error('Failed to load image:', e.target.src);
+              e.target.style.display = 'none';
+            }}
+          />
+          <img 
+            src={FR3} 
+            alt="Founderise Interface 3" 
+            onError={(e) => {
+              console.error('Failed to load image:', e.target.src);
+              e.target.style.display = 'none';
+            }}
+          />
+        </div>
       </div>
 
       <div className="project-navigation">

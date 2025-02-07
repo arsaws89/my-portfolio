@@ -24,14 +24,22 @@ const CobiProject = () => {
           <h1>Cobi</h1>
           <h2>UI/UX • Mobile App • Brand Identity</h2>
           <p className="project-description">
-            <strong>Problem:</strong> [Problem statement here]
+            <strong>Problem:</strong> Banks and customers face shared challenges, including the need for personalized, flexible products and services, better customer understanding, and faster innovation.
           </p>
           <p className="project-description">
-            <strong>Solution:</strong> [Solution description here]
+            <strong>Solution:</strong> An AI powered analytics platform for financial institutions to execute & design digital banking strategies
           </p>
           <p className="project-description">
-            <strong>My Role:</strong> [Role description here]
+            <strong>My Role:</strong> Created a sleek and innovative brand, a landing page & a seamless dashboard visualizing complex financial insights, and optimizing AI-driven decision-making tools
           </p>
+          <a 
+            href="https://hellocobi.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            Visit Website →
+          </a>
         </div>
       </div>
 
@@ -56,4 +64,4 @@ const CobiProject = () => {
   )
 }
 
-export default CobiProject 
+export default CobiProject

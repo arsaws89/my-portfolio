@@ -16,10 +16,15 @@ const LaunchpadProject = () => {
       <div className="project-hero">
         <div className="project-intro">
           <h1>Spring Studios Launchpad Batch 02</h1>
-          <h2>Brand Strategy • Visual Identity • Art Direction</h2>
-          <p className="project-description">
-            A comprehensive branding project for Launchpad, a startup accelerator program.
-          </p>
+          <h2>Branding • Web Design</h2>
+          <a 
+            href="https://www.springstudios.io/launchpad" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            Visit Website →
+          </a>
         </div>
         <img 
           src={launchpadHero}
@@ -29,20 +34,9 @@ const LaunchpadProject = () => {
       </div>
 
       <div className="project-content">
-        <section className="project-section">
-          <h3>The Challenge</h3>
-          <p>Project details here...</p>
-        </section>
-
-        <section className="project-section">
-          <h3>The Solution</h3>
-          <p>Solution details here...</p>
-        </section>
-
-        <section className="project-section">
-          <h3>The Result</h3>
-          <p>Results and outcomes...</p>
-        </section>
+        <div className="project-images-stack">
+          {/* Add your project images here */}
+        </div>
       </div>
 
       <div className="project-navigation">

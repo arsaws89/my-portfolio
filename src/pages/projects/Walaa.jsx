@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import '../../styles/ProjectPage.css'
+import Walaa1 from '../../assets/Walaa1.jpg'
+import Walaa2 from '../../assets/Walaa2.jpg'
 
 const WalaaProject = () => {
   const navigate = useNavigate()
@@ -15,22 +17,31 @@ const WalaaProject = () => {
       <div className="project-hero">
         <div className="project-intro">
           <h1>Walaa</h1>
-          <h2>UI/UX • Web App • Brand Identity</h2>
+          <h2>Branding • Web Design</h2>
           <p className="project-description">
-            <strong>Problem:</strong> [Problem statement here]
-          </p>
-          <p className="project-description">
-            <strong>Solution:</strong> [Solution description here]
-          </p>
-          <p className="project-description">
-            <strong>My Role:</strong> [Role description here]
+            A comprehensive brand identity and web design project for Walaa, a VIP membership club. The design focuses on creating a modern, trustworthy, and user-friendly digital presence.
           </p>
         </div>
       </div>
 
       <div className="project-content">
         <div className="project-images-stack">
-          {/* Add Walaa project images here */}
+          <img 
+            src={Walaa1} 
+            alt="Walaa Interface 1" 
+            onError={(e) => {
+              console.error('Failed to load image:', e.target.src);
+              e.target.style.display = 'none';
+            }}
+          />
+          <img 
+            src={Walaa2} 
+            alt="Walaa Interface 2" 
+            onError={(e) => {
+              console.error('Failed to load image:', e.target.src);
+              e.target.style.display = 'none';
+            }}
+          />
         </div>
       </div>
 

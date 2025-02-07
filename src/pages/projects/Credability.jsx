@@ -19,16 +19,7 @@ const CredabilityProject = () => {
       <div className="project-hero">
         <div className="project-intro">
           <h1>Credability</h1>
-          <h2>UI/UX • Web Design • Brand Identity</h2>
-          <p className="project-description">
-            <strong>Problem:</strong> [Problem statement here]
-          </p>
-          <p className="project-description">
-            <strong>Solution:</strong> [Solution description here]
-          </p>
-          <p className="project-description">
-            <strong>My Role:</strong> [Role description here]
-          </p>
+          <h2>Branding • Landing Page</h2>
         </div>
       </div>
 

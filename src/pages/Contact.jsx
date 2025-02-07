@@ -38,30 +38,30 @@ const Contact = () => {
       </nav>
 
       <div className="contact-content">
-        <div className="contact-info">
-          <div className="contact-left">
-            <h1>Let's Create Something Amazing Together</h1>
-            <div className="contact-text">
-              <p>I'm always interested in hearing about new projects and opportunities.</p>
-              <p>Drop me a message:</p>
+        {isSubmitted ? (
+          <div className="contact-info submitted">
+            <div className="thank-you-message">
+              <h2>Thank You!</h2>
+              <p>Your message has been sent successfully.</p>
+              <p>I'll get back to you soon!</p>
+              <button 
+                onClick={() => setIsSubmitted(false)} 
+                className="send-another-button"
+              >
+                Send Another Message
+              </button>
             </div>
           </div>
-
-          {isSubmitted ? (
-            <div className="contact-info submitted">
-              <div className="thank-you-message">
-                <h2>Thank You!</h2>
-                <p>Your message has been sent successfully.</p>
-                <p>I'll get back to you soon!</p>
-                <button 
-                  onClick={() => setIsSubmitted(false)} 
-                  className="send-another-button"
-                >
-                  Send Another Message
-                </button>
+        ) : (
+          <div className="contact-info">
+            <div className="contact-left">
+              <h1>Let's Create Something Amazing Together</h1>
+              <div className="contact-text">
+                <p>I'm always interested in hearing about new projects and opportunities.</p>
+                <p>Drop me a message:</p>
               </div>
             </div>
-          ) : (
+
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="name">Name</label>
@@ -106,8 +106,8 @@ const Contact = () => {
                 Send Message
               </button>
             </form>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </div>
   )
