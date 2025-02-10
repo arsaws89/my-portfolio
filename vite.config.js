@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/portfolio/', // Assuming your repo will be named 'portfolio'
+  base: '/', // Changed from '/portfolio/' to '/' since we're using a custom domain
   build: {
     outDir: 'dist',
     rollupOptions: {
