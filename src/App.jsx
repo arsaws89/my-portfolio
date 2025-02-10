@@ -1,4 +1,6 @@
+import React from 'react'
 import { Routes, Route } from 'react-router-dom'
+import './App.css'
 import Home from './pages/Home'
 import LaunchpadProject from './pages/projects/Launchpad'
 import OpenSponsorProject from './pages/projects/OpenSponsor'
@@ -12,18 +14,20 @@ import Contact from './pages/Contact'
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/projects/launchpad" element={<LaunchpadProject />} />
-      <Route path="/projects/opensponsor" element={<OpenSponsorProject />} />
-      <Route path="/projects/credability" element={<CredabilityProject />} />
-      <Route path="/projects/cobi" element={<CobiProject />} />
-      <Route path="/projects/talmena" element={<TalmenaProject />} />
-      <Route path="/projects/skiplino" element={<SkiplinoProject />} />
-      <Route path="/projects/founderise" element={<FounderiseProject />} />
-      <Route path="/projects/walaa" element={<WalaaProject />} />
-      <Route path="/contact" element={<Contact />} />
-    </Routes>
+    <div className="App">
+      <Routes>
+        <Route path="" element={<Home />} />
+        <Route path="projects/launchpad" element={<LaunchpadProject />} />
+        <Route path="projects/opensponsor" element={<OpenSponsorProject />} />
+        <Route path="projects/credability" element={<CredabilityProject />} />
+        <Route path="projects/cobi" element={<CobiProject />} />
+        <Route path="projects/talmena" element={<TalmenaProject />} />
+        <Route path="projects/skiplino" element={<SkiplinoProject />} />
+        <Route path="projects/founderise" element={<FounderiseProject />} />
+        <Route path="projects/walaa" element={<WalaaProject />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
+    </div>
   )
 }
 

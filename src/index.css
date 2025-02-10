@@ -17,6 +17,7 @@
   padding: 0;
 }
 
+/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
@@ -25,8 +26,37 @@
 
 body {
   margin: 0;
-  padding: 0;
+  min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Responsive typography */
+html {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Improve touch targets on mobile */
+button, 
+a {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Add padding to clickable elements */
+@media (max-width: 768px) {
+  button, 
+  a, 
+  input, 
+  select {
+    padding: 0.5rem;
+  }
 }
 
 a {
