@@ -1,52 +1,47 @@
 import { useNavigate } from 'react-router-dom'
 import '../../styles/ProjectPage.css'
+import frame1 from '../../assets/Founderrise/FR2.jpg'
+import frame2 from '../../assets/Founderrise/FR3.jpg'
+import frame3 from '../../assets/founderise.jpg'
 
 const FounderiseProject = () => {
   const navigate = useNavigate()
 
   return (
-    <div className="project-page">
+    <div className="project-page" data-project="founderise">
       <nav className="project-nav">
         <button onClick={() => navigate('/')} className="back-button">
           ← Back
         </button>
-        <h1>Founderise</h1>
       </nav>
 
       <div className="project-hero">
         <div className="project-intro">
-          <h2>UI/UX • Web App • Brand Identity</h2>
+          <h1>Founderise</h1>
+          <h2>UI/UX • Web Platform • Brand Identity</h2>
           <p className="project-description">
-            Project description here...
+            <strong>Problem:</strong> [Problem statement here]
+          </p>
+          <p className="project-description">
+            <strong>Solution:</strong> [Solution description here]
+          </p>
+          <p className="project-description">
+            <strong>My Role:</strong> [Role description here]
           </p>
         </div>
-        <img 
-          src="/path/to/hero-image.jpg" 
-          alt="Founderise Project Hero" 
-          className="hero-image"
-        />
       </div>
 
       <div className="project-content">
-        <section className="project-section">
-          <h3>The Challenge</h3>
-          <p>Project details here...</p>
-        </section>
-
-        <section className="project-section">
-          <h3>The Solution</h3>
-          <p>Solution details here...</p>
-        </section>
-
-        <section className="project-section">
-          <h3>The Result</h3>
-          <p>Results and outcomes...</p>
-        </section>
+        <div className="project-images-stack">
+          <img src={frame3} alt="Founderise Final Design" />
+          <img src={frame1} alt="Founderise Cover" />
+          <img src={frame2} alt="Founderise Design Process" />
+        </div>
       </div>
 
       <div className="project-navigation">
-        <button onClick={() => navigate('/projects/launchpad')} className="next-project">
-          Next Project: Launchpad →
+        <button onClick={() => navigate('/projects/skiplino')} className="next-project">
+          Next Project: Skiplino →
         </button>
       </div>
     </div>

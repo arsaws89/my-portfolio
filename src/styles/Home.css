@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -154,7 +154,7 @@ body {
 
 .hero-text-large {
   color: var(--text-color);
-  font-family: "KH Teka TRIAL", "Inter", sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 90px;
   font-style: normal;
   font-weight: 300;
@@ -304,27 +304,213 @@ body {
   }
 }
 
+/* Add this before the media queries */
+.burger-menu {
+  display: none; /* Hide burger menu by default on desktop */
+}
+
+.mobile-menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 8;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-menu-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 75%;
+  height: 100vh;
+  background-color: #000000;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 120px;
+  padding-left: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translateX(100%);
+}
+
+.mobile-menu.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.mobile-menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+  width: 100%;
+}
+
+.mobile-menu-items a,
+.mobile-menu-items button {
+  color: #FFFFFF;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.mobile-menu-items a:hover,
+.mobile-menu-items button:hover {
+  transform: translateX(5px);
+}
+
+/* Update the mobile styles */
 @media (max-width: 768px) {
   :root {
     --container-padding: 20px;
   }
   
+  .nav-container {
+    padding: 2rem 20px;
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  .logo {
+    margin-left: 0;
+    font-size: 1.3rem;
+  }
+  
   .nav-links {
-    gap: 2rem;
+    display: none;
   }
-  
-  .hero-title-line {
-    font-size: 2.5rem;
-  }
-  
-  .hero-text {
-    font-size: 1.1rem;
+
+  .hero-content {
+    padding: 0 20px;
+    position: relative;
   }
   
   .hero-text-large {
-    font-size: 42px;
-    line-height: 40px;
+    font-size: 34px;
+    line-height: 50px;
     letter-spacing: -1px;
+    margin-left: 0;
+  }
+
+  .scroll-down-button {
+    position: relative;
+    bottom: auto;
+    margin-top: 40px;
+  }
+
+  /* Burger menu styles */
+  .burger-menu {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .burger-menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+
+  .burger-menu.open span {
+    background-color: #FFFFFF;
+  }
+
+  .burger-menu span:first-child {
+    top: 0;
+  }
+
+  .burger-menu span:nth-child(2) {
+    top: 9px;
+  }
+
+  .burger-menu span:last-child {
+    bottom: 0;
+  }
+
+  .burger-menu.open span:first-child {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .burger-menu.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.open span:last-child {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+    gap: 160px;
+    padding: 0 20px;
+  }
+
+  .work-card {
+    margin-bottom: 0;
+  }
+
+  .yellow-strip {
+    height: 80px;
+    margin-top: 200px;
+  }
+
+  .strip-content {
+    font-size: 22px;
+    line-height: 20px;
+    animation: scrollText 60s linear infinite;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .social-button {
+    padding: 8px 20px;
+    font-size: 18px;
+    line-height: 22px;
+    min-width: 120px;
+  }
+
+  .footer {
+    padding: 60px 0;
+  }
+
+  .footer-content {
+    padding: 0 20px;
+    gap: 30px;
   }
 }
 
@@ -342,9 +528,10 @@ body {
   }
   
   .hero-text-large {
-    font-size: 32px;
-    line-height: 30px;
+    font-size: 28px;
+    line-height: 40px;
     letter-spacing: -0.8px;
+    margin-left: 0;
   }
 }
 
@@ -356,14 +543,6 @@ body {
   height: 100%;
   pointer-events: none;
   z-index: 2;
-}
-
-/* Add @font-face for KH Teka TRIAL if needed */
-@font-face {
-  font-family: "KH Teka TRIAL";
-  src: url("/fonts/KHTekaTRIAL.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
 }
 
 /* Add these styles for the decryption effect */
@@ -403,6 +582,7 @@ body {
   min-height: 100vh;
   padding: 160px 0;
   color: white;
+  position: relative;
 }
 
 .work-grid {
@@ -410,7 +590,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 60px;
+  gap: 120px 60px;
   padding: 0 2rem;
   width: 100%;
 }
@@ -445,7 +625,7 @@ body {
 }
 
 .work-content h3 {
-  font-family: "KH Teka TRIAL", "Inter", sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 12px;
@@ -467,9 +647,32 @@ body {
   transform: translateY(0);
 }
 
+/* Mobile styles */
 @media (max-width: 768px) {
+  .work-section {
+    padding: 80px 0;
+  }
+
   .work-grid {
     grid-template-columns: 1fr;
+    gap: 160px;
+    padding: 0 20px;
+    margin-bottom: 240px;  /* Add extra space after the last project */
+  }
+
+  .work-card {
+    margin-bottom: 0;
+  }
+
+  .yellow-strip {
+    height: 80px;
+    margin-top: 0;  /* Reset margin since we're using grid margin */
+  }
+
+  .strip-content {
+    font-size: 22px;
+    line-height: 20px;
+    animation: scrollText 60s linear infinite;
   }
 }
 
@@ -487,15 +690,15 @@ body {
 
 .strip-content {
   color: #000;
-  font-family: "KH Teka TRIAL";
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 30.8px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 28.8px;
   text-transform: uppercase;
   white-space: nowrap;
   display: inline-block;
-  animation: scrollText 30s linear infinite;
+  animation: scrollText 45s linear infinite;
   padding: 0;
 }
 
@@ -520,7 +723,7 @@ body {
   margin: 0 auto;
   padding: 0 2rem;
   color: #000000;
-  font-family: "KH Teka TRIAL", "Inter", sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -545,10 +748,10 @@ body {
   color: #000;
   text-decoration: none;
   text-align: center;
-  font-family: "KH Teka TRIAL";
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 28px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 35.2px;
   transition: all 0.3s ease;
 }
@@ -561,7 +764,7 @@ body {
 .copyright {
   color: #000;
   text-align: center;
-  font-family: "KH Teka TRIAL";
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;

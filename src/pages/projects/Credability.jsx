@@ -21,21 +21,15 @@ const CredabilityProject = () => {
           <h1>Credability</h1>
           <h2>UI/UX • Web Design • Brand Identity</h2>
           <p className="project-description">
-            <strong>Problem:</strong> [Problem statement here]
-          </p>
-          <p className="project-description">
-            <strong>Solution:</strong> [Solution description here]
-          </p>
-          <p className="project-description">
-            <strong>My Role:</strong> [Role description here]
+            Designed a minimal and futuristic brand & interface for a next-gen lending platform. The clean aesthetic and intuitive layout reflect innovation and trust, creating a seamless experience for users. Explore the future of financial solutions!
           </p>
         </div>
       </div>
 
       <div className="project-content">
         <div className="project-images-stack">
-          <img src={frame1} alt="Credability Frame 1" />
           <img src={frame2} alt="Credability Frame 2" />
+          <img src={frame1} alt="Credability Frame 1" />
           <img src={frame3} alt="Credability Frame 3" />
           <img src={frame4} alt="Credability Frame 4" />
         </div>
@@ -50,4 +44,4 @@ const CredabilityProject = () => {
   )
 }
 
-export default CredabilityProject 
+export default CredabilityProject

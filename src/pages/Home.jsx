@@ -10,10 +10,10 @@ import credabilityImage from '../assets/credability.jpg'
 import talmenaImage from '../assets/talmena.png'
 import skiplinoImage from '../assets/skiplino.jpg'
 import founderiseImage from '../assets/founderise.jpg'
-import saboonImage from '../assets/saboon.png'
 
 const Home = () => {
   const [textAnimationComplete, setTextAnimationComplete] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const navigate = useNavigate()
 
   const scrollToNext = () => {
@@ -21,6 +21,12 @@ const Home = () => {
       top: window.innerHeight,
       behavior: 'smooth'
     })
+  }
+
+  const scrollToProjects = () => {
+    const projectsSection = document.querySelector('.work-section')
+    projectsSection.scrollIntoView({ behavior: 'smooth' })
+    setIsMenuOpen(false)
   }
 
   return (
@@ -32,17 +38,41 @@ const Home = () => {
           </div>
           <div className="nav-links">
             <button 
-              onClick={() => {
-                const projectsSection = document.querySelector('.work-section');
-                projectsSection.scrollIntoView({ behavior: 'smooth' });
-              }}
+              onClick={scrollToProjects}
               className="nav-link-button"
             >
               <span className="nav-bullet">•</span> Playground
             </button>
             <Link to="/contact"><span className="nav-bullet">•</span> Get in touch</Link>
           </div>
+          <div 
+            className={`burger-menu ${isMenuOpen ? 'open' : ''}`}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </nav>
+
+        {/* Mobile Menu Backdrop */}
+        <div 
+          className={`mobile-menu-backdrop ${isMenuOpen ? 'open' : ''}`}
+          onClick={() => setIsMenuOpen(false)}
+        ></div>
+
+        {/* Mobile Menu */}
+        <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
+          <div className="mobile-menu-items">
+            <button onClick={scrollToProjects}>
+              Playground
+            </button>
+            <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+              Get in touch
+            </Link>
+          </div>
+        </div>
+
         <div className="hero-content">
           <div className="hero-text-large">
             <DecryptedText
@@ -167,17 +197,6 @@ const Home = () => {
               <p>UI/UX • Web Platform • Brand Identity</p>
             </div>
           </div>
-          <div className="work-card" onClick={() => navigate('/projects/saboon')}>
-            <img 
-              src={saboonImage}
-              alt="Saboon Project" 
-              className="work-card-image"
-            />
-            <div className="work-content">
-              <h3>Saboon</h3>
-              <p>UI/UX • E-commerce • Brand Identity</p>
-            </div>
-          </div>
         </div>
         <div className="yellow-strip">
           <div className="strip-content">
@@ -187,17 +206,14 @@ const Home = () => {
         <footer className="footer">
           <div className="footer-content">
             <div className="social-links">
-              <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="social-button">
+              <a href="https://www.linkedin.com/in/sawsanarja/" target="_blank" rel="noopener noreferrer" className="social-button">
                 LinkedIn
               </a>
-              <a href="https://dribbble.com/yourprofile" target="_blank" rel="noopener noreferrer" className="social-button">
+              <a href="https://dribbble.com/Sawsanarja" target="_blank" rel="noopener noreferrer" className="social-button">
                 Dribbble
               </a>
-              <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" className="social-button">
+              <a href="https://www.instagram.com/unwastethetrash/" target="_blank" rel="noopener noreferrer" className="social-button">
                 Instagram
-              </a>
-              <a href="mailto:your@email.com" className="social-button">
-                Email
               </a>
             </div>
             <p className="copyright">© 2024 Sawsan Arja. All rights reserved.</p>

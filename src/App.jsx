@@ -8,6 +8,7 @@ import TalmenaProject from './pages/projects/Talmena'
 import SkiplinoProject from './pages/projects/Skiplino'
 import SaboonProject from './pages/projects/Saboon'
 import FounderiseProject from './pages/projects/Founderise'
+import Contact from './pages/Contact'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path="/projects/skiplino" element={<SkiplinoProject />} />
       <Route path="/projects/saboon" element={<SaboonProject />} />
       <Route path="/projects/founderise" element={<FounderiseProject />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   )
 }

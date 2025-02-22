@@ -1,11 +1,10 @@
 import { useNavigate } from 'react-router-dom'
 import '../../styles/ProjectPage.css'
-import frame1 from '../../assets/Frame 1.jpg'
-import frame2 from '../../assets/Frame 2.jpg'
-import frame3 from '../../assets/Frame 3.jpg'
-import frame4 from '../../assets/Frame 4.jpg'
-import frame5 from '../../assets/Frame 5.jpg'
-import frame6 from '../../assets/Frame 6.jpg'
+import frame1 from '../../assets/Opensponsor/Frame 1.jpg'
+import frame2 from '../../assets/Opensponsor/Frame 2.jpg'
+import frame3 from '../../assets/Opensponsor/Frame 3.jpg'
+import frame4 from '../../assets/Opensponsor/Frame 4.jpg'
+import frame5 from '../../assets/Opensponsor/Frame 5.jpg'
 
 const OpenSponsorProject = () => {
   const navigate = useNavigate()
@@ -36,12 +35,11 @@ const OpenSponsorProject = () => {
 
       <div className="project-content">
         <div className="project-images-stack">
-          <img src={frame5} alt="OpenSponsor Frame 5" />
-          <img src={frame6} alt="OpenSponsor Frame 6" />
-          <img src={frame1} alt="OpenSponsor Frame 1" />
-          <img src={frame2} alt="OpenSponsor Frame 2" />
-          <img src={frame3} alt="OpenSponsor Frame 3" />
-          <img src={frame4} alt="OpenSponsor Frame 4" />
+          <img src={frame5} alt="OpenSponsor Final Design" />
+          <img src={frame1} alt="OpenSponsor Cover" />
+          <img src={frame2} alt="OpenSponsor Design Process" />
+          <img src={frame3} alt="OpenSponsor Interface" />
+          <img src={frame4} alt="OpenSponsor Features" />
         </div>
       </div>
 
@@ -54,4 +52,4 @@ const OpenSponsorProject = () => {
   )
 }
 
-export default OpenSponsorProject 
+export default OpenSponsorProject
