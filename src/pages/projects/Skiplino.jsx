@@ -38,7 +38,7 @@ const SkiplinoProject = () => {
             <strong>My Role:</strong> My responsibility was to research user pain points, map out the ideal booking journey, and design an intuitive interface that enhances the overall user experience.
           </p>
           <p className="project-description studio-tag">
-            Work done at <a href="https://www.springstudios.io" target="_blank" rel="noopener noreferrer">Spring Studios</a>
+            Work done at <a href="https://www.skiplino.com" target="_blank" rel="noopener noreferrer">Skiplino</a>
           </p>
         </div>
       </div>
