@@ -18,15 +18,12 @@ const FounderiseProject = () => {
       <div className="project-hero">
         <div className="project-intro">
           <h1>Founderise</h1>
-          <h2>UI/UX • Web Platform • Brand Identity</h2>
+          <h2>Web Design • Branding</h2>
           <p className="project-description">
-            <strong>Problem:</strong> [Problem statement here]
+            A vibrant and modern design for an exclusive founders' VIP club. This colorful, friendly interface celebrates community and connection, creating a welcoming space for entrepreneurs.
           </p>
-          <p className="project-description">
-            <strong>Solution:</strong> [Solution description here]
-          </p>
-          <p className="project-description">
-            <strong>My Role:</strong> [Role description here]
+          <p className="project-description" style={{fontStyle: 'italic'}}>
+            Work done at <a href="https://www.springstudios.io" target="_blank" rel="noopener noreferrer">Spring Studios</a>
           </p>
         </div>
       </div>

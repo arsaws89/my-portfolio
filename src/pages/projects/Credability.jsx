@@ -23,6 +23,9 @@ const CredabilityProject = () => {
           <p className="project-description">
             Designed a minimal and futuristic brand & interface for a next-gen lending platform. The clean aesthetic and intuitive layout reflect innovation and trust, creating a seamless experience for users. Explore the future of financial solutions!
           </p>
+          <p className="project-description" style={{fontStyle: 'italic'}}>
+            Work done at <a href="https://www.springstudios.io" target="_blank" rel="noopener noreferrer">Spring Studios</a>
+          </p>
         </div>
       </div>
 

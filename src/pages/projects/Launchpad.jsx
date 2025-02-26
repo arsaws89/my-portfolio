@@ -20,6 +20,9 @@ const LaunchpadProject = () => {
           <p className="project-description">
             Crafted a bold and modern design for our venture studio's Launchpad program, blending sleek visuals with intuitive functionality. This project captures the spirit of innovation and entrepreneurship. Check it out! 👇
           </p>
+          <p className="project-description studio-tag">
+            Work done at <a href="https://www.springstudios.io" target="_blank" rel="noopener noreferrer">Spring Studios</a>
+          </p>
           <a 
             href="https://www.springstudios.io/launchpad" 
             target="_blank" 

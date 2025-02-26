@@ -639,6 +639,17 @@ body {
   font-weight: 300;
 }
 
+.studio-tag {
+  font-style: italic !important;
+  color: #000000 !important;
+  opacity: 1 !important;
+}
+
+.studio-tag a {
+  color: #000000 !important;
+  text-decoration: underline;
+}
+
 .work-card:hover .work-card-image {
   transform: scale(1.02);
 }

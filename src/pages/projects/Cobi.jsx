@@ -32,6 +32,9 @@ const CobiProject = () => {
           <p className="project-description">
             <strong>My Role:</strong> Created a sleek and innovative brand, a landing page & a seamless dashboard visualizing complex financial insights, and optimizing AI-driven decision-making tools
           </p>
+          <p className="project-description" style={{fontStyle: 'italic'}}>
+            Work done at <a href="https://www.springstudios.io" target="_blank" rel="noopener noreferrer">Spring Studios</a>
+          </p>
           <a 
             href="https://www.hellocobi.com/" 
             target="_blank" 

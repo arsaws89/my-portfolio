@@ -129,6 +129,9 @@ const Home = () => {
             <div className="work-content">
               <h3>Launchpad</h3>
               <p>Brand Strategy • Visual Identity • Art Direction</p>
+              <p className="studio-tag">
+                Work done at <a href="https://www.springstudios.io" target="_blank" rel="noopener noreferrer">Spring Studios</a>
+              </p>
             </div>
           </div>
           <div className="work-card" onClick={() => navigate('/projects/opensponsor')}>
@@ -140,6 +143,7 @@ const Home = () => {
             <div className="work-content">
               <h3>OpenSponsor</h3>
               <p>Branding • UI/UX</p>
+              <p className="studio-tag">Work done at Spring Studios</p>
             </div>
           </div>
           <div className="work-card" onClick={() => navigate('/projects/credability')}>
@@ -151,6 +155,7 @@ const Home = () => {
             <div className="work-content">
               <h3>Credability</h3>
               <p>UI/UX • Web Design • Brand Identity</p>
+              <p className="studio-tag">Work done at Spring Studios</p>
             </div>
           </div>
           <div className="work-card" onClick={() => navigate('/projects/cobi')}>
@@ -162,6 +167,7 @@ const Home = () => {
             <div className="work-content">
               <h3>Cobi</h3>
               <p>UI/UX • Mobile App • Brand Identity</p>
+              <p className="studio-tag">Work done at Spring Studios</p>
             </div>
           </div>
           <div className="work-card" onClick={() => navigate('/projects/talmena')}>
@@ -173,6 +179,7 @@ const Home = () => {
             <div className="work-content">
               <h3>Talmena</h3>
               <p>UI/UX • Mobile App • Brand Identity</p>
+              <p className="studio-tag">Work done at Spring Studios</p>
             </div>
           </div>
           <div className="work-card" onClick={() => navigate('/projects/skiplino')}>
@@ -184,6 +191,7 @@ const Home = () => {
             <div className="work-content">
               <h3>Skiplino</h3>
               <p>UI/UX • Web App • Brand Identity</p>
+              <p className="studio-tag">Work done at Spring Studios</p>
             </div>
           </div>
           <div className="work-card" onClick={() => navigate('/projects/founderise')}>
@@ -195,6 +203,7 @@ const Home = () => {
             <div className="work-content">
               <h3>Founderise</h3>
               <p>UI/UX • Web Platform • Brand Identity</p>
+              <p className="studio-tag">Work done at Spring Studios</p>
             </div>
           </div>
         </div>

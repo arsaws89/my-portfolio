@@ -24,6 +24,9 @@ const TalmenaProject = () => {
           <p className="project-description">
             Designed an intuitive and seamless job application experience for candidates using a talent acquisition platform. The goal is to improve usability, reduce drop-offs, and ensure a smooth interaction from job discovery to application submission.
           </p>
+          <p className="project-description" style={{fontStyle: 'italic'}}>
+            Work done at <a href="https://www.springstudios.io" target="_blank" rel="noopener noreferrer">Spring Studios</a>
+          </p>
         </div>
       </div>
 
