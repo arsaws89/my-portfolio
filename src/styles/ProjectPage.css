@@ -68,8 +68,8 @@
 }
 
 .project-description.studio-tag {
-  font-style: italic;
   color: #000;
+  font-style: normal;
 }
 
 .project-description.studio-tag a {

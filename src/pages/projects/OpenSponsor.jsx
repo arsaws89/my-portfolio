@@ -30,8 +30,8 @@ const OpenSponsorProject = () => {
           <p className="project-description">
             <strong>My Role:</strong> Designed a modern brand and a seamless and intelligent UI/UX for AI-powered platform that utilizes OpenAI's API to enhance user experience and automate tasks.
           </p>
-          <p className="project-description">
-            Work done at Spring Studios
+          <p className="project-description studio-tag">
+            Work done at <a href="https://www.springstudios.io" target="_blank" rel="noopener noreferrer">Spring Studios</a>
           </p>
         </div>
       </div>

@@ -24,15 +24,15 @@ const CobiProject = () => {
           <h1>Cobi</h1>
           <h2>UI/UX • Mobile App • Brand Identity</h2>
           <p className="project-description">
-            <strong>Problem:</strong> Banks and customers face shared challenges, including the need  for personalized, flexible products and services, better customer understanding, and faster innovation.
+            <strong>Problem:</strong> Lack of a unified platform for managing and tracking construction projects, leading to inefficiencies and communication gaps.
           </p>
           <p className="project-description">
-            <strong>Solution:</strong> An AI powered analytics platform for financial institutions to execute & design digital banking strategies
+            <strong>Solution:</strong> A comprehensive construction management platform that streamlines project tracking, communication, and documentation.
           </p>
           <p className="project-description">
-            <strong>My Role:</strong> Created a sleek and innovative brand, a landing page & a seamless dashboard visualizing complex financial insights, and optimizing AI-driven decision-making tools
+            <strong>My Role:</strong> Designed a modern and intuitive interface for the construction management platform, focusing on user experience and efficient workflow management.
           </p>
-          <p className="project-description" style={{fontStyle: 'italic'}}>
+          <p className="project-description studio-tag">
             Work done at <a href="https://www.springstudios.io" target="_blank" rel="noopener noreferrer">Spring Studios</a>
           </p>
           <a 

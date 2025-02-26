@@ -22,9 +22,15 @@ const TalmenaProject = () => {
           <h1>Talmena</h1>
           <h2>UI/UX • Mobile App • Brand Identity</h2>
           <p className="project-description">
-            Designed an intuitive and seamless job application experience for candidates using a talent acquisition platform. The goal is to improve usability, reduce drop-offs, and ensure a smooth interaction from job discovery to application submission.
+            <strong>Problem:</strong> Traditional education systems struggle to provide personalized learning experiences and track student progress effectively.
           </p>
-          <p className="project-description" style={{fontStyle: 'italic'}}>
+          <p className="project-description">
+            <strong>Solution:</strong> An AI-powered educational platform that adapts to individual learning styles and provides comprehensive progress tracking.
+          </p>
+          <p className="project-description">
+            <strong>My Role:</strong> Designed an engaging and user-friendly interface for the educational platform, incorporating gamification elements and intuitive navigation.
+          </p>
+          <p className="project-description studio-tag">
             Work done at <a href="https://www.springstudios.io" target="_blank" rel="noopener noreferrer">Spring Studios</a>
           </p>
         </div>

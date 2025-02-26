@@ -22,7 +22,7 @@ const FounderiseProject = () => {
           <p className="project-description">
             A vibrant and modern design for an exclusive founders' VIP club. This colorful, friendly interface celebrates community and connection, creating a welcoming space for entrepreneurs.
           </p>
-          <p className="project-description" style={{fontStyle: 'italic'}}>
+          <p className="project-description studio-tag">
             Work done at <a href="https://www.springstudios.io" target="_blank" rel="noopener noreferrer">Spring Studios</a>
           </p>
         </div>
